@@ -1,8 +1,7 @@
 function loopOne(time){
 
-      time = 30;
-
       while(time > 0){
+
         if(time % 5 == 0){
             console.log("FUKATOM "+time+" seconds left!");
         }
@@ -15,12 +14,25 @@ function loopOne(time){
       }
       console.log("You is done");
 }
-function loopTwo(){
+function loopTwo(number, power){
 
+      let sum = 0;
 
+      for(let p = 0; p < power; p=p + 1){
+
+        sum = sum + number^p;
+      }
+      console.log(sum);
 }
 
-function loopThree(){
+function loopThree(symbol, number){
+
+      for(let n = 0; n<number; n=n+1){
+
+        console.log();
+
+      }
+
 
 
 }

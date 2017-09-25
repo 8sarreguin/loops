@@ -3,7 +3,7 @@ function loopOne(time){
       while(time > 0){
 
         if(time % 5 == 0){
-            console.log("FUKATOM "+time+" seconds left!");
+            console.log("OH NO "+time+" seconds left!");
         }
         else {
           console.log(time+"seconds left");
@@ -20,17 +20,16 @@ function loopTwo(number, power){
 
       for(let p = 0; p < power; p=p + 1){
 
-        sum = sum + number^p;
+        sum = sum + Math.pow(number,p);
       }
-      console.log(sum);
+      return sum;
 }
 
 function loopThree(symbol, number){
-
+        let oldsymbol = symbol;
       for(let n = 0; n<number; n=n+1){
-
-        console.log();
-
+          console.log(oldsymbol);
+          oldsymbol =oldsymbol+symbol;
       }
 
 
